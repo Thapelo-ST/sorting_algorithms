@@ -1,8 +1,8 @@
 #include "sort.h"
 
 /**
- * insertion_sort_list - ...
- * @list: ...
+ * insertion_sort_list - sorts a list one item at a time
+ * @list: array to be sorted
  */
 
 void insertion_sort_list(listint_t **list)

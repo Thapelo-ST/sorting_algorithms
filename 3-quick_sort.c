@@ -26,7 +26,7 @@ int lomuto_partition(int *array, int low, int high, size_t size)
 		}
 	}
 
-	temp = array[i +1];
+	temp = array[i + 1];
 	array[i + 1] = array[high];
 	array[high] = temp;
 
@@ -49,7 +49,7 @@ void quick_sort_helper(int *array, int low, int high, size_t size)
 		int pivot = lomuto_partition(array, low, high, size);
 
 		quick_sort_helper(array, low, pivot - 1, size);
-		quick_sort_helper(array,pivot + 1, high, size);
+		quick_sort_helper(array, pivot + 1, high, size);
 	}
 }
 

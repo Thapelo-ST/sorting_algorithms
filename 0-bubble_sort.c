@@ -17,11 +17,11 @@ void bubble_sort(int *array, size_t size)
 	if (array == 0 && size == 0)
 		return;
 
-	/* loop to enter the list/ array */
+	/* loop to enter the list/array */
 	for (i = 0; i < size - 1; i++)
 	{
 		/*loop to compare*/
-		for (j = 0; j < size - i; j++)
+		for (j = 0; j < size - i - 1; j++)
 		{
 			/*swap if the the current number is bigger than the found number*/
 			if (array[j] > array[j + 1])

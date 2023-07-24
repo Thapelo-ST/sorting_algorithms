@@ -12,7 +12,8 @@
  *
  * @n: Integer stored in the node
  * @prev: Pointer to the previous element of the list
- * @next: Pointer to the next element of the list*/
+ * @next: Pointer to the next element of the list
+ */
 typedef struct listint_s
 {
     const int n;
@@ -30,6 +31,7 @@ void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 
 /* quick sort function adders*/
-void quick_sort_helper(int *array, int low, int high, size_t size);
-int lomuto_partition(int *array, int low, int high, size_t size);
+void quick_sort_helper(int *array, int low, int high);
+void swap(int *a, int *b);
+int lomuto_partition(int *array, int low, int high);
 #endif /* SORT_H */

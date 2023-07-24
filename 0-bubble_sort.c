@@ -13,7 +13,7 @@ void bubble_sort(int *array, size_t size)
 	/* declare variables*/
 	int temp;
 	size_t i, j;
-	bool swapped = false;
+	bool swapped;
 
 	/* check if size and array are not empty*/
 	if (array == 0 && size == 0)
@@ -33,11 +33,9 @@ void bubble_sort(int *array, size_t size)
 				array[j] = array[j + 1];
 				array[j + 1] = temp;
 				swapped = true;
+				print_array(array, size);
 			}
 		}
-		/*print each time the outer loop completes */
-		print_array(array, size);
-
 		if (!swapped)
 			break;
 	}
